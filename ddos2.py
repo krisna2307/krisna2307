@@ -109,7 +109,7 @@ def usage():
 	-p = SERVER PORT [DEFAULT 80]
 	-t = TURBO [DEFAULT 200]
 	
-EXAMPLE = python3 ddos2.py -s20.227.250.130 -p19132 -t200
+EXAMPLE = python3 ddos2.py 20.227.250.130 19132 200
 
 
 	'''
@@ -138,7 +138,7 @@ def get_parameters():
 	else:
 		usage()
 	if opts.port is None:
-		port = 80
+		port = 19132
 	else:
 		port = opts.port
 	if opts.turbo is None:
